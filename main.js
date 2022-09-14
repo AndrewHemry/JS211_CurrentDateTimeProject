@@ -16,11 +16,22 @@ const displayDate = () => {
 
 // Write a JavaScript program to convert a number to a string.
 
+const ConvertNumberToString = () => {
+  let basicNumber = 100;
+  let numberFromString = basicNumber.toString();
+  console.log(numberFromString)
+}
 
+ConvertNumberToString()
 
 // Write a JavaScript program to convert a string to the number.
 
+const ConvertStringToNumber = () => {
+  let basicString = "101"
+  console.log(+basicString)
+}
 
+ConvertStringToNumber()
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
@@ -30,21 +41,59 @@ const displayDate = () => {
   // * NaN
   // * String
   
+const TypeOfChecker = () => {
+  let basicVariable = 27
+  console.log(typeof basicVariable)
+}
 
+TypeOfChecker()
   
 // Write a JavaScript program that adds 2 numbers together.
 
+const AdditionFunction = (num1, num2) => {
+  console.log(num1 + num2)
+}
 
+AdditionFunction(12, 17)
 
 // Write a JavaScript program that runs only when 2 things are true.
 
-
+const DoubleTrueChecker = (num1, num2) => {
+  if (typeof num1 && typeof num2 === 'number') {
+    console.log(num1 + num2)
+  } else {
+    console.log("Please Enter Numbers")
+  }
+}
+DoubleTrueChecker(12, 15)
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
+const SingleTrueChecker = (num1, num2) => {
+  console.log("Enter two numbers, where one is greater than the other.")
+  if (num1 >= num2 || num1 > 0) {
+    console.log("These are your results", num1 + num2)
+  } else {
+    console.log("Number 2 has to be greater than zero, and number 1 has to be greater than number 2.")
+  }
+}
+
+SingleTrueChecker(-3, 0)
 
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const DoubleFalseChecker = (num1, num2) => {
+  console.log("Enter two numbers, where one is greater than the other.")
+  if (num1 >= num2 || num1 > 0) {
+    console.log("These are your results", num1 + num2)
+  } else {
+    console.log("Number 2 has to be greater than zero, and number 1 has to be greater than number 2.")
+  }
+}
+
+DoubleFalseChecker(-3, 0)
+
 
 // ***************************
 //         PART TWO
